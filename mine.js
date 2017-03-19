@@ -24,9 +24,7 @@ $(document).ready(function(){
 				switch(direction){
 						case "up":
 						console.log("Exit "+direction);
-						setPosition(overlay, "top", "-100%");
-						$(overlay).addClass("animate opac");
-						break;
+						
 					}
 				
 				});

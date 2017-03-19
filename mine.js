@@ -8,8 +8,10 @@ $(document).ready(function(){
 				
 				switch(direction){
 						case "up":
-						$(overlay).css("top", "-100%").addClass("animate opac");
-						
+						$(overlay).css("top", "-100%");
+						setTimeout(function(){
+							$(overlay).addClass("animate opac");
+						}, 200);
 						break;
 					}
 			}, function(){

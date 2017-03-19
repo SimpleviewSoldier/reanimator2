@@ -26,6 +26,7 @@ $(document).ready(function(){
 						$(overlay).css("top", "-100%");
 						setTimeout(function(){
 							$(overlay).removeClass("animate opac");
+							$(overlay).css("top", "0");
 						}, 205);
 					}
 				

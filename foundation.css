@@ -8,7 +8,7 @@
 	height: 250px;
 	width: 250px;
 	float: left;
-	margin:0;
+	margin:1px;
 	overflow: hidden;
 	background-color: blue;
 }

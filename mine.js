@@ -8,7 +8,8 @@ $(document).ready(function(){
 				
 				switch(direction){
 						case "up":
-						$(overlay).css("top", "-100%").addClass("animate opac");
+						$(overlay).css("top", "-100%");
+						$(overay).addClass("animate opac");
 						
 						break;
 					}

@@ -24,6 +24,25 @@ $(document).ready(function(){
 			setTimeout(function(){
 				$(overlay).css("top", "0");
 			}, 10);
+			break;
+			case "left":
+			$(overlay).css("left", "-100%");
+			setTimeout(function(){
+				$(overlay).addClass("animate opac");
+			}, 10);
+			setTimeout(function(){
+				$(overlay).css("left", "0");
+			}, 10);
+			break;
+			case "right":
+			$(overlay).css("left", "100%");
+			setTimeout(function(){
+				$(overlay).addClass("animate opac");
+			}, 10);
+			setTimeout(function(){
+				$(overlay).css("left", "0");
+			}, 10);
+			break;
 		}
 	}, function(){
 		var direction = $(this).entry({ e : event });
@@ -38,12 +57,26 @@ $(document).ready(function(){
 			}, 205)
 			break;
 			case "down":
-			case "up":
 			$(overlay).css("top", "100%");
 			setTimeout(function(){
 				$(overlay).removeClass("animate opac");
 				$(overlay).css("top", "0");
-			}, 205)
+			}, 205);
+			break;
+			case "left":
+			$(overlay).css("left", "-100%");
+			setTimeout(function(){
+				$(overlay).removeClass("animate opac");
+				$(overlay).css("left", "0");
+			}, 205);
+			break;
+			case "right":
+			$(overlay).css("left", "100%");
+			setTimeout(function(){
+				$(overlay).removeClass("animate opac");
+				$(overlay).css("left", "0");
+			}, 205);
+			break;
 		}
 
 	});

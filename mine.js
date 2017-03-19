@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	alert("hey");
+	
 		var target = $("div.outer");
 		
 		function setPosition(element, position, value){
@@ -7,12 +7,13 @@ $(document).ready(function(){
 			}
 		
 		$(target).hover(function(){
-				 var direction = $(this).entry({ e : event });
+				var direction = $(this).entry({ e : event });
 				let overlay = $(this).find("div.inner");
 				
 				switch(direction){
 						case "up":
 						setPosition(overlay, "top", "-100%");
+						$(overlay).addClass("animate opac");
 						break;
 					}
 			});

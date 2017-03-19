@@ -9,7 +9,7 @@ $(document).ready(function(){
 				switch(direction){
 						case "up":
 						$(overlay).css("top", "-100%");
-						$(overlay).css("top", "0").addClass("animate, opac");
+						$(overlay).css("top", "0").addClass("animate opac");
 						
 						break;
 					}

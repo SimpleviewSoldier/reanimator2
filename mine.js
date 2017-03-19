@@ -50,10 +50,10 @@ $(document).ready(function(){
 
 		switch(direction){
 			case "up":
-			$(overlay).css("translateY", "-100%");
+			$(overlay).css("top", "-100%");
 			setTimeout(function(){
 				$(overlay).removeClass("animate opac");
-				$(overlay).css("translateY", "0");
+				$(overlay).css("top", "0");
 			}, 205)
 			break;
 			case "down":

@@ -15,7 +15,8 @@ $(document).ready(function(){
 				
 				switch(direction){
 						case "up":
-						$(overlay).setPosition("top", "-100%").addClass("animate opac");
+						$(overlay).setPosition("top", "-100%");
+						$(overlay).addClass("animate opac");
 						break;
 					}
 			}, function(){

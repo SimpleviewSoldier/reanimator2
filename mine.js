@@ -23,8 +23,10 @@ $(document).ready(function(){
 				
 				switch(direction){
 						case "up":
-						console.log("Exit "+direction);
-						
+						$(overlay).css("top", "-100%");
+						setTimeout(function(){
+							$(overlay).removeClass("animate opac");
+						});
 					}
 				
 				});

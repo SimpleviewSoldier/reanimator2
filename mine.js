@@ -13,7 +13,7 @@ $(document).ready(function(){
 				switch(direction){
 						case "up":
 						setPosition("top", "-100%");
-						$(overlay).addClass("animate opac");
+						
 						break;
 					}
 			}, function(){

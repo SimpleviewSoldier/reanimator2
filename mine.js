@@ -11,37 +11,37 @@ $(document).ready(function(){
 			$(overlay).css("top", "-100%");
 			setTimeout(function(){
 				$(overlay).addClass("animate opac");
-			}, 10);
+			}, 1);
 			setTimeout(function(){
 				$(overlay).css("top", "0");
-			}, 10);
+			}, 1);
 			break;
 			case "down":
 			$(overlay).css("top", "100%");
 			setTimeout(function(){
 				$(overlay).addClass("animate opac");
-			}, 10);
+			}, 1);
 			setTimeout(function(){
 				$(overlay).css("top", "0");
-			}, 10);
+			}, 1);
 			break;
 			case "left":
 			$(overlay).css("left", "-100%");
 			setTimeout(function(){
 				$(overlay).addClass("animate opac");
-			}, 10);
+			}, 1);
 			setTimeout(function(){
 				$(overlay).css("left", "0");
-			}, 10);
+			}, 1);
 			break;
 			case "right":
 			$(overlay).css("left", "100%");
 			setTimeout(function(){
 				$(overlay).addClass("animate opac");
-			}, 10);
+			}, 1);
 			setTimeout(function(){
 				$(overlay).css("left", "0");
-			}, 10);
+			}, 1);
 			break;
 		}
 	}, function(){
@@ -54,28 +54,28 @@ $(document).ready(function(){
 			setTimeout(function(){
 				$(overlay).removeClass("animate opac");
 				$(overlay).css("top", "0");
-			}, 205)
+			}, 201)
 			break;
 			case "down":
 			$(overlay).css("top", "100%");
 			setTimeout(function(){
 				$(overlay).removeClass("animate opac");
 				$(overlay).css("top", "0");
-			}, 205);
+			}, 201);
 			break;
 			case "left":
 			$(overlay).css("left", "-100%");
 			setTimeout(function(){
 				$(overlay).removeClass("animate opac");
 				$(overlay).css("left", "0");
-			}, 205);
+			}, 201);
 			break;
 			case "right":
 			$(overlay).css("left", "100%");
 			setTimeout(function(){
 				$(overlay).removeClass("animate opac");
 				$(overlay).css("left", "0");
-			}, 205);
+			}, 201);
 			break;
 		}
 

@@ -8,12 +8,12 @@ $(document).ready(function(){
 
 		switch(direction){
 			case "up":
-			$(overlay).css("transform", "translateY(-100%)");
+			$(overlay).css("top", "-100%");
 			setTimeout(function(){
 				$(overlay).addClass("animate opac");
 			}, 5);
 			setTimeout(function(){
-				$(overlay).css("translateY", "0");
+				$(overlay).css("top", "0");
 			}, 5);
 			break;
 			case "down":

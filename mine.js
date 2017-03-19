@@ -4,11 +4,11 @@ $(document).ready(function(){
 		
 		$(target).hover(function(){
 				var direction = $(this).entry({ e : event });
-				let overlay = $(this).find("div.inner");
+				var overlay = $(this).find("div.inner");
 				
 				switch(direction){
 						case "up":
-						let overlay = $(overlay).css("top", "-100%");
+						$(overlay).css("top", "-100%");
 						$(overlay).addClass("animate opac");
 						
 						break;

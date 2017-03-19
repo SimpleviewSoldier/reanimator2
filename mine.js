@@ -26,7 +26,7 @@ $(document).ready(function(){
 						$(overlay).css("top", "-100%");
 						setTimeout(function(){
 							$(overlay).removeClass("animate opac");
-						});
+						}, 205);
 					}
 				
 				});

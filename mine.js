@@ -2,9 +2,12 @@ $(document).ready(function(){
 	
 		var target = $("div.outer");
 		
-		function setPosition(element, position, value){
-				$(element).css(position, value);
-			}
+		
+	
+	$.fn.setPosition = function (element, position, value) {
+    $(element).css(position, value);
+		return this;
+};
 		
 		$(target).hover(function(){
 				var direction = $(this).entry({ e : event });
@@ -12,9 +15,7 @@ $(document).ready(function(){
 				
 				switch(direction){
 						case "up":
-						console.log("Enter "+direction);
-						setPosition(overlay, "top", "-100%");
-						$(overlay).addClass("animate opac");
+						$(overlay).setPosition("top", "-100%").addClass("animate opac");
 						break;
 					}
 			}, function(){

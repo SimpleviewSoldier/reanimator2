@@ -12,6 +12,9 @@ $(document).ready(function(){
 						setTimeout(function(){
 							$(overlay).addClass("animate opac");
 						}, 10);
+						setTimeout(function(){
+							$(overlay).css("top", "0");
+						}, 10);
 						break;
 					}
 			}, function(){

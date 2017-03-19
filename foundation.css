@@ -19,5 +19,8 @@
 	height: 250px;
 	width: 250px;
 	background-color: yellow;
-	opacity: 0.5;
+}
+
+.animate {
+	transition: all 0.2s;
 }

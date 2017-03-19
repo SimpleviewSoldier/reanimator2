@@ -11,7 +11,7 @@ $(document).ready(function(){
 						$(overlay).css("top", "-100%");
 						setTimeout(function(){
 							$(overlay).addClass("animate opac");
-						}, 200);
+						}, 10);
 						break;
 					}
 			}, function(){

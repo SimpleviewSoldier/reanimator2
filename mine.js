@@ -12,13 +12,16 @@ $(document).ready(function(){
 				"pointer-events" : "none"
 			});
 			console.log("GO");
-			requestAnimationFrame(function(){
+			setTimeout(function(){
+				requestAnimationFrame(function(){
 				$(panel).addClass("animate");
 				$(panel).css({
 					"transform" : "",
 					"pointer-events" : "all"
 				});
 			});
+			}, 5);
+			break;
 		}
 	}, function(event){
 		var direction = $(this).entry({e : event});

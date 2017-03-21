@@ -7,7 +7,7 @@ $(document).ready(function(){
 		switch (direction) {
 			case "up":
 			$(panel).css("top", "-100%");
-			$(panel).addClass("animate");
+			$(panel).addClass("animate opac");
 			setTimeout(function(){
 				requestAnimationFrame(function(){
 					$(panel).css("top", "0")

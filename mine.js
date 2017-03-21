@@ -8,12 +8,13 @@ $(document).ready(function(){
 			case "up":
 			$(panel).css("top", "-100%");
 			$(panel).addClass("animate opac");
-			
+			$(panel).on("click", function(){
 				requestAnimationFrame(function(){
 					$(panel).css("top", "0");
 					console.log("GOOOOOO");
 				});
-			
+			});
+			$(panel).click();
 			break;
 		}
 	}, function(event){

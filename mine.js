@@ -11,7 +11,15 @@ $(document).ready(function(){
 				"will-change" : "transform",
 				"pointer-events" : "none"
 			});
-			
+			$(panel).addClass("animate")
+			setTimeout(function(){
+				requestAnimationFrame(function(){
+				$(panel).css({
+					"transform" : "",
+					"pointer-events" : "all"
+				});
+			});
+			}, 10);
 			break;
 		}
 	}, function(event){

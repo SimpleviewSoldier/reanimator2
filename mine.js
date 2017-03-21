@@ -8,7 +8,7 @@ $(document).ready(function(){
 			case "up":
 			$(panel).css({
 				"transform" : "translate"+axis+"("+value+")",
-				"will-change" : "transform"k
+				"will-change" : "transform",
 				"pointer-events" : "none"
 			});
 			console.log("GO");

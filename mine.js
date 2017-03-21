@@ -11,7 +11,7 @@ $(document).ready(function(){
 				"will-change" : "transform",
 				"pointer-events" : "none"
 			});
-			$(panel).addClass("animate")
+			$(panel).addClass("animate");
 			setTimeout(function(){
 				requestAnimationFrame(function(){
 				$(panel).css({

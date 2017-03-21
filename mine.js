@@ -11,16 +11,7 @@ $(document).ready(function(){
 				"will-change" : "transform",
 				"pointer-events" : "none"
 			});
-			console.log("GO");
-			setTimeout(function(){
-				requestAnimationFrame(function(){
-				$(panel).addClass("animate");
-				$(panel).css({
-					"transform" : "",
-					"pointer-events" : "all"
-				});
-			});
-			}, 5);
+			
 			break;
 		}
 	}, function(event){

@@ -15,7 +15,7 @@ $(document).ready(function(){
 			setTimeout(function(){
 				requestAnimationFrame(function(){
 				$(panel).css({
-					"transform" : "",
+					"transform" : "translateY(0)",
 					"pointer-events" : "all"
 				});
 			});

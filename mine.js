@@ -14,7 +14,7 @@ $(document).ready(function(){
 					console.log("GOOOOOO");
 				});
 			});
-			$(panel).click();
+			
 			break;
 		}
 	}, function(event){

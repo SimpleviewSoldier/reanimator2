@@ -7,7 +7,7 @@ $(document).ready(function(){
 		switch (direction) {
 			case "up":
 			$(panel).css({
-				"transform" : "translate"+axis+"("+value+")",
+				"transform" : "translateY(-100%)",
 				"will-change" : "transform",
 				"pointer-events" : "none"
 			});

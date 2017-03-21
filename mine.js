@@ -8,11 +8,11 @@ $(document).ready(function(){
 			case "up":
 			$(panel).css("top", "-100%");
 			$(panel).addClass("animate opac");
-			setTimeout(function(){
+			
 				requestAnimationFrame(function(){
 					$(panel).css("top", "0")
 				});
-			}, 25);
+			
 			break;
 		}
 	}, function(event){

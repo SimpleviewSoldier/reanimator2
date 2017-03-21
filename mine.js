@@ -6,20 +6,13 @@ $(document).ready(function(){
 		var panel = $(this).find("div.inner");
 		switch (direction) {
 			case "up":
-			$(panel).css({
-				"transform" : "translateY(-100%)",
-				"will-change" : "transform",
-				"pointer-events" : "none"
-			});
+			$(panel).css("top", "-100%");
 			$(panel).addClass("animate");
 			setTimeout(function(){
 				requestAnimationFrame(function(){
-				$(panel).css({
-					"transform" : "translateY(0)",
-					"pointer-events" : "all"
+					$(panel).css("top", "0")
 				});
-			});
-			}, 10);
+			}, 25);
 			break;
 		}
 	}, function(event){

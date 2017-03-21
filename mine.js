@@ -10,7 +10,8 @@ $(document).ready(function(){
 			$(panel).addClass("animate opac");
 			
 				requestAnimationFrame(function(){
-					$(panel).css("top", "0")
+					$(panel).css("top", "0");
+					console.log("GOOOOOO");
 				});
 			
 			break;
